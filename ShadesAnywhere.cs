@@ -14,7 +14,7 @@ using HutongGames.PlayMaker;
 namespace ShadesAnywhere {
     public class ShadesAnywhere: Mod {
         new public string GetName() => "ShadesAnywhere";
-        public override string GetVersion() => "1.0.0.0";
+        public override string GetVersion() => "1.0.0.1";
 
         public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects) {
             new ILHook(typeof(HeroController).GetMethod("Die", BindingFlags.NonPublic | BindingFlags.Instance).GetStateMachineTarget(), die);
